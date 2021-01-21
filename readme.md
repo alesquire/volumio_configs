@@ -1,3 +1,4 @@
+## My Volumio setup and cookbook
 ### How to read codes from IR Remote:
 
 The problem is that modern linux kernels starting from 4.19 have changed LIRC driver implementation, that sends data in a different format. 
@@ -20,3 +21,7 @@ Two files should be placed:
 * lircd.conf with button codes
 * lircrc with definition- what volumio action should be performed on keys from remote
 
+### How to extend SD card
+Problem- SD card image was taken from one size of disk, but flashed card is bigger. By default- partitioned size will be equal to iage size, not to card size. To extend it on volumio - perform
+touch /boot/resize-volumio-datapart
+sudo reboot
