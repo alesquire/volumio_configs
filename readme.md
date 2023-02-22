@@ -1,5 +1,8 @@
 ## My Volumio setup and cookbook
+
 ### How to read codes from IR Remote:
+
+*** Obsolete. Starting from Volumio 3 ecodes could be read on actual version ***
 
 The problem is that modern linux kernels starting from 4.19 have changed LIRC driver implementation, that sends data in a different format. 
 While utility like irrecord and mode2 wasn't changed and stays broken. After several attempts to patch LIRC driver as described in 
